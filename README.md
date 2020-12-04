@@ -34,7 +34,7 @@ for result in result_os.split('\n'):
         print(prepare_result)
 #       brake - убираем из цикла выход
 
-## 3. При запуске скрипта указываем полный путь до репозитория (python <name_script.py> <path_repositories>)
+## 3,4. При запуске скрипта указываем полный путь до репозитория (python <name_script.py> <path_repositories>)
 #!/usr/bin/env python3
 
 import os
@@ -47,5 +47,4 @@ for result in result_os.split('\n'):
     if result.find('modified') != -1: 
         prepare_result = result.replace('\tmodified:   ', '')
         print('По указанному пути',sys.argv[1],'изменен файл',prepare_result)
-   
-
+        
